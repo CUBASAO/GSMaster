@@ -24,5 +24,6 @@ window.addEventListener('load', function() {
     btnWhatsapp.addEventListener('click', function() {
         let msgChecked = prepareMesages(REEMPLAZO, textoEnviar);
         sendMesages(WHATSAPP_API, PHONE, TEXT, numTelefonoPropietario, msgChecked);
+        console.log(msgChecked);
     });
 });
