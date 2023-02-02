@@ -19,12 +19,12 @@ function sendMesages(WHATSAPP_API, PHONE, TEXT, numTelefonoPropietario, mesageCh
 }
 //*******************EJECUCION PRINCIPAL*************************/
 window.addEventListener('load', function() {
+    createHeader();
     console.log(prepareMesages(REEMPLAZO, textoEnviar));
     var btnWhatsapp = document.getElementsByTagName('input')[0];
     btnWhatsapp.addEventListener('click', function() {
         let msgChecked = prepareMesages(REEMPLAZO, textoEnviar);
         sendMesages(WHATSAPP_API, PHONE, TEXT, numTelefonoPropietario, msgChecked);
         console.log(msgChecked);
-        createHeader();
     });
 });
