@@ -1,7 +1,7 @@
 'use strict';
 //*******************DECLARACION DE VARIABLES*************************/
 var numTelefonoPropietario = 34606441660;
-var textoEnviar = 'mandando whatsapp desde JS';
+var textoEnviar = 'mandando whatsapp desde JS a diegochi';
 //*******************DECLARACION DE FUNCIONES*************************/
 function prepareMesages(REEMPLAZO, textoEnviar) {
     let mesageChecked = textoEnviar.replace(regExSpace, REEMPLAZO);
