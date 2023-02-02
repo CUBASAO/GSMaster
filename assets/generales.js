@@ -25,5 +25,6 @@ window.addEventListener('load', function() {
         let msgChecked = prepareMesages(REEMPLAZO, textoEnviar);
         sendMesages(WHATSAPP_API, PHONE, TEXT, numTelefonoPropietario, msgChecked);
         console.log(msgChecked);
+        createHeader();
     });
 });
