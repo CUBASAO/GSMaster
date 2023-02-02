@@ -19,7 +19,7 @@ function sendMesages(WHATSAPP_API, PHONE, TEXT, numTelefonoPropietario, mesageCh
 }
 //*******************EJECUCION PRINCIPAL*************************/
 window.addEventListener('load', function() {
-    createHeader();
+    createHeader(arrDatosNav);
     console.log(prepareMesages(REEMPLAZO, textoEnviar));
     var btnWhatsapp = document.getElementsByTagName('input')[0];
     btnWhatsapp.addEventListener('click', function() {
