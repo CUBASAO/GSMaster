@@ -1,0 +1,14 @@
+Datos sobre las carpetas y ficheros del proyecto
+
+-La carpeta assets contiene los diferentes archivos javascript necesarios para el funcionamiento de la aplicación.
+    -El archivo config.js contiene los datos y metodos para conexion a las distintas APIs que utiliza la application.
+    -El archivo createScript.js contiene los metodos para la creacion de los elementos HTML que forman la app.
+    -El archivo generales.js contiene las funciones y eventos que desarrollarán las interacciones de los usuarios.
+    -El archivo regex.js contiene las expresiones regulares que se utilizarán para verificar la veracidad de los datos que introduzcan los usuarios.
+
+-La carpeta css contiene los archivos de estilos de la app los cuales en este caso están desarrollados con SASS.
+    -La carpeta 'parciales' contiene las hojas de estilos.
+        -El archivo '_generales.scss' son los estilos principales de la app.
+        -El archivo '_variables.scss' contiene los mixin y variables que se utilizan en el resto de hojas.
+
+-La carpeta 'images' contendrá las imagenes de la app.   
