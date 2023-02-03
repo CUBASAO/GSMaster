@@ -8,10 +8,10 @@
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid red;
+  flex-wrap: wrap;
 }
 header > nav {
   display: flex;
@@ -19,7 +19,6 @@ header > nav {
   align-items: center;
   width: 60%;
   height: 100%;
-  border: 1px solid blue;
 }
 header > nav > ul {
   width: 100%;
@@ -32,12 +31,9 @@ header > nav > ul {
   justify-content: space-between;
 }
 header > div.logo {
-  height: 100%;
   width: 20%;
-  border: 1px solid black;
 }
 header > div.profile {
-  border: 1px solid yellow;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -47,4 +43,22 @@ header > div.profile {
 }
 header > div.profile > div.imgProfile {
   margin-right: 5px;
+}
+header > input[type=search] {
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+header > input[type=search]::-moz-placeholder {
+  color: red;
+}
+header > input[type=search]:-ms-input-placeholder {
+  color: red;
+}
+header > input[type=search]::placeholder {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
