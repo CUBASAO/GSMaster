@@ -70,7 +70,12 @@ function createMain(body) {
     categoriesContainer.setAttribute('class', 'catContainer');
 
     //Funcion para crear las opciones del filtro de servicios
-
+    let checkFilter = document.createElement('input');
+    checkFilter.setAttribute('type', 'checkbox');
+    let checkFilterLbl = document.createElement('label');
+    checkFilterLbl.innerText = 'Peluqueria';
+    checkFilterLbl.appendChild(checkFilter);
+    categoriesContainer.appendChild(checkFilterLbl);
     navMain.appendChild(buscador);
     navMain.appendChild(categorias);
     navMain.appendChild(categoriesContainer);

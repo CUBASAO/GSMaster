@@ -85,8 +85,8 @@ main > div.navMain {
   flex-wrap: wrap;
   flex-direction: column;
   width: 15%;
-  background: darkslateblue;
-  padding-left: 10px;
+  background: #303030;
+  padding: 10px;
 }
 main > div.navMain > h3 {
   color: white;
@@ -102,6 +102,21 @@ main > div.navMain > div.catContainer {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+main > div.navMain > div.catContainer > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  color: white;
+}
+main > div.navMain > div.catContainer > label > input {
+  margin-right: 10px;
 }
 main > .showServices {
   width: 85%;
