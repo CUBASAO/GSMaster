@@ -20,8 +20,9 @@ function sendMesages(WHATSAPP_API, PHONE, TEXT, numTelefonoPropietario, mesageCh
 //*******************EJECUCION PRINCIPAL*************************/
 window.addEventListener('load', function() {
     createHeader(arrDatosNav);
+    createMain(body);
     console.log(prepareMesages(REEMPLAZO, textoEnviar));
-    var btnWhatsapp = document.getElementsByTagName('input')[0];
+    // var btnWhatsapp = document.getElementsByTagName('input')[0];
     btnWhatsapp.addEventListener('click', function() {
         let msgChecked = prepareMesages(REEMPLAZO, textoEnviar);
         sendMesages(WHATSAPP_API, PHONE, TEXT, numTelefonoPropietario, msgChecked);

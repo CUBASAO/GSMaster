@@ -8,10 +8,12 @@
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  padding-bottom: 20px;
+  background: #202020;
 }
 header > nav {
   display: flex;
@@ -30,8 +32,13 @@ header > nav > ul {
   flex-direction: row;
   justify-content: space-between;
 }
+header > nav > ul > li > a {
+  color: white;
+  font-size: 1.5em;
+}
 header > div.logo {
   width: 20%;
+  border: 1px solid black;
 }
 header > div.profile {
   padding: 10px;
@@ -46,7 +53,7 @@ header > div.profile > div.imgProfile {
 }
 header > input[type=search] {
   width: 80%;
-  height: 25px;
+  height: 30px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -61,4 +68,42 @@ header > input[type=search]:-ms-input-placeholder {
 }
 header > input[type=search]::placeholder {
   color: red;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+main > div.navMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 15%;
+  background: darkslateblue;
+  padding-left: 10px;
+}
+main > div.navMain > h3 {
+  color: white;
+  font-size: 1.5em;
+}
+main > div.navMain > h4 {
+  color: white;
+  align-self: flex-start;
+}
+main > div.navMain > div.catContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+main > .showServices {
+  width: 85%;
+  border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
