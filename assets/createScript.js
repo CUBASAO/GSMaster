@@ -36,7 +36,7 @@ function createHeader(arrDatosNav) {
     userInfo.appendChild(closeSessions);
     profile.appendChild(divImgProfile);
     profile.appendChild(userInfo);
-    for (let index = 0; index < numNavItem; index++) {
+    for (let index = 0; index <= numNavItem; index++) {
         let navItem = document.createElement('li');
         let navItemLink = document.createElement('a');
         navItemLink.setAttribute('href', '#');
